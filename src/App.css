@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.App-wrapper {
+  background-color: #fff;
+  display: flex;
+  margin: 10vh auto;
+  height: 80vh;
+  width: 100vh;
+}
+
+.App-repoSearcher,
+.App-starredList {
+  height: 100%;
+  flex-basis: 50%;
+  padding: 1rem 2rem;
+}
+
+.App-repoSearcher {
+  padding-top: 2rem;
+}
+
+.App-repoSearcher form {
+  display: flex;
+}
+
+.App-repoSearcher button {
+  appearance: none;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  width: 20%;
+}
+
+.App-repoSearcherSelect {
+  width: 80%;
+}
+
+.App-starredList {
+  background-color: #eee;
+}
+
+.RepoList {
+  list-style: none;
+  margin: 0;
+  margin-top: 1rem;
+  max-height: calc(100% - 6vh);
+  overflow: auto;
+  padding: 0;
+}
+
+.Repo {
+  background-color: #fff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.Repo-buttonWrapper {
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 1vh);
+  height: 2vh;
+  display: flex;
+}
+
+.Repo-buttonWrapper button {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.Repo-buttonWrapper svg {
+  height: 2vh;
+}
+
+.Repo-starButton svg path {
+  /* Turned off: */
+  fill: #bbb;
+
+  /* Turned on: */
+  /* fill: #ed8a19; */
+}
+
+.Repo-unstarButton svg path {
+  fill: #888;
+}
+
+.Repo-avatarAndName {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.Repo-avatarAndName img {
+  width: 24px;
+  margin-right: 0.5rem;
+}
+
+.Repo-name {
+  color: #0366d6;
+}
+
+.Repo-language {
+  margin-top: 0.8rem;
+}
+
+.Repo-language span {
+  border: 1px solid black;
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.5rem;
+}
